@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galley</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="diary.html">Diary</a></li>
+                <li><a href="diarylisting.php">Diarylisting</a></li>
+                <li><a href="song.html">Song</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+<style>
+    /* CSS for image grid */
+    .image-grid {
+        display: flx;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    
+    }
+    .image-grid img {
+        width: 400px;
+        height: 300px;
+        border: 3px solid #000000;
+        border-radius: 13px;
+        box-shadow: 4px 7px 0px #000000;
+        cursor: pointer;
+        margin: -0px;
+        transition: 100ms;
+    }   
+
+    .image-grid :hover{
+        filter: grayscale(-1);
+        transform: scale(2.5);
+
+
+    }
+
+    /* CSS for audio playlist */
+    .audio-playlist {
+        margin-top: 20px;
+    }
+        /* CSS styles for the h1 element */
+        h1 {
+            font-size: 100px;
+            color: #ffffff;
+            text-align: left;
+            /* You can add more styles here as needed */
+        }
+
+        p {
+            font-size: 10px;
+            color: #000000;
+            text-align: right;
+            /* You can add more styles here as needed */
+        }
+    
+        h2 {
+            font-size: 100px;
+            color: #ffffff;
+            text-align: left;
+            /* You can add more styles here as needed */
+        }
+</style>
+<main>
+    <h1>My Personal Gallery</h1>
+    <p>Here are some images and audio files I'd like to share with you.</p>
+
+    <!-- Image Grid -->
+    <div class="image-grid">
+        <img src="ghelo1.jpg" alt="Image 1">
+        <img src="ghelo2.jpg" alt="Image 2">
+        <img src="ghelo3.jpg" alt="Image 3">
+        <img src="ghelo4.jpg" alt="Image 4">
+        <img src="ghelo5.jpg" alt="Image 5">
+
+    </div>
+
+    <!-- Short Description of Images -->
+    <p>These images reflect some of my favorite moments and interests. I hope you enjoy them as much as I do.</p>
+
+           <!-- Audio Playlist -->
+            <div class="audio-playlist">
+                <h1>My Favorite Song in the world
+                </h1>
+                <ul>
+                    <li>
+                        <a href="Court u bby .mp3" target="_blank">Court u bby .mp3</a>
+                    </li>
+                    <li>    
+                        <a href="Court u bby .mp3" target="_blank">Court u bby .mp3</a>
+                    <li>
+                        <a href="Court u bby .mp3" target="_blank">Court u bby .mp3</a>
+                </ul>
+            </div>
+        </main>
+        </html>

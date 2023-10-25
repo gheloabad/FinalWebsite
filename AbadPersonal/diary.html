@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="diary.html">Diary</a></li>
+                <li><a href="diarylisting.php">Diarylisting</a></li>
+                <li><a href="song.html">song</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+<style>
+    /* CSS styles go here */
+    main {
+        padding: 40px;
+        text-align: left;
+    }
+    
+    h3 {
+        color: #ffffff;
+    }
+    
+    p {
+        font-size: 18px;
+        color: #3a0000;
+    }
+</style>
+<main>
+    <form action="process_form.php" method="post">
+        <label for="topic">Topic:</label>
+        <input type="text" name="topic" required><br>
+
+        <label for="category">Category:</label>
+        <select name="category" required>
+            <option value="Home">Home</option>
+            <option value="Personal">Personal</option>
+            <option value="School">School</option>
+            <option value="Peers">Peers</option>
+            <option value="Others">Others</option>
+        </select><br><br>
+
+        <label for="content">Content:</label>
+        <textarea name="content" rows="1" required></textarea><br>
+
+        <label for="date">Date:</label>
+        <input type="date" name="date" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</main>
+</html>
